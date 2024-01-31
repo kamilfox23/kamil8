@@ -1,14 +1,14 @@
-<p>Переместите мышь для увеличения ширины:</p>
+<p>РџРѕС‚СЏРЅРё РЅР° РїСЂР°РІРѕ:</p>
 <div style="background: orange; width: 60px; height: 20px">
 </div>
 <script>
-var lastX; // Последняя позиция мыши
+var lastX; // ГЏГ®Г±Г«ГҐГ¤Г­ГїГї ГЇГ®Г§ГЁГ¶ГЁГї Г¬Г»ГёГЁ
 var rect = document.querySelector("div");
 rect.addEventListener("mousedown", function(event) {
 if (event.which == 1) {
 lastX = event.pageX;
 addEventListener("mousemove", moved);
-event.preventDefault(); // Запретим выделение
+event.preventDefault(); // Г‡Г ГЇГ°ГҐГІГЁГ¬ ГўГ»Г¤ГҐГ«ГҐГ­ГЁГҐ
 }
 });
 function moved(event) {
